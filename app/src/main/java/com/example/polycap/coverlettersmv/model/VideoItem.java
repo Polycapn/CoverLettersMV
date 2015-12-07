@@ -1,4 +1,4 @@
-package com.example.polycap.coverlettersmv;
+package com.example.polycap.coverlettersmv.model;
 
 /**
  * Created by Polycap on 12/3/2015.
@@ -40,5 +40,6 @@ public class VideoItem {
     public void setId(String id) {
         this.id = id;
     }
+
 }
 

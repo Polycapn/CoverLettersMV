@@ -4,13 +4,14 @@
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
     <application
+        android:name= "com.example.polycap.coverlettersmv.Presenter.AppContext"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".CoverLettersActivities"
+            android:name=".View.CoverLettersActivities"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_cover_letter"
             android:theme="@style/AppTheme">
@@ -21,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PlayerActivity"
+            android:name=".View.PlayerActivity"
             android:label="@string/title_activity_cover_letters_activities"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

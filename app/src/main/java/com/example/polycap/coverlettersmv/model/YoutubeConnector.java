@@ -1,8 +1,9 @@
-package com.example.polycap.coverlettersmv;
+package com.example.polycap.coverlettersmv.model;
 
 import android.content.Context;
 import android.util.Log;
 
+import com.example.polycap.coverlettersmv.R;
 import com.google.api.client.http.HttpRequest;
 import com.google.api.client.http.HttpRequestInitializer;
 import com.google.api.client.http.javanet.NetHttpTransport;

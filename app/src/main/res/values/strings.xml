@@ -10,6 +10,7 @@
 
     <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
     <string name="title_activity_cover_letters_activities">CoverLettersActivities</string>
+    <string name="mindvalleyCL">MindValley Cover Letter</string>
 
 
 </resources>

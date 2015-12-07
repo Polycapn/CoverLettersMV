@@ -1,33 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:padding="16dp" >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp">
 
-    <ImageView
-        android:id="@+id/video_thumbnail"
-        android:layout_width="128dp"
-        android:layout_height="128dp"
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:background="@color/black_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginRight="20dp"/>
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
 
-    <TextView
-        android:id="@+id/video_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/video_thumbnail"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="5dp"
-        android:textStyle="bold"
-        android:textColor="@color/textColor"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/video_description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/video_thumbnail"
-        android:layout_below="@+id/video_title"
-        android:textSize="15sp"
-        android:textColor="@color/textColor"/>
+            <ImageView
+                android:id="@+id/video_thumbnail"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:id="@+id/video_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/video_thumbnail"
+                android:layout_toRightOf="@+id/video_thumbnail"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
 
 </RelativeLayout>

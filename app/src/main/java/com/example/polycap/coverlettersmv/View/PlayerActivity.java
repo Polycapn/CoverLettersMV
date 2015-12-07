@@ -1,8 +1,10 @@
-package com.example.polycap.coverlettersmv;
+package com.example.polycap.coverlettersmv.View;
 
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.polycap.coverlettersmv.R;
+import com.example.polycap.coverlettersmv.model.YoutubeConnector;
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
