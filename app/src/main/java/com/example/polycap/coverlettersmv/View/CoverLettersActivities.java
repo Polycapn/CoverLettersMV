@@ -16,8 +16,6 @@ import java.util.List;
 
 public class CoverLettersActivities extends ActionBarActivity implements YouTubedata {
 
-//    private EditText searchInput;
-
     Toolbar mActionBarToolbar;
 
     private YouTubeAdapter adapter;
@@ -37,23 +35,10 @@ public class CoverLettersActivities extends ActionBarActivity implements YouTube
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
 
-        youTubepresenter =  new YouTubepresenter(this);
+        youTubepresenter = new YouTubepresenter(this);
         youTubepresenter.searchOnYoutube(getString(R.string.mindvalleyCL));
-//         addClickListener();
+
     }
-
-
-//
-//    private void addClickListener() {
-//        .setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                Intent intent = new Intent(getApplication(), PlayerActivity.class);
-//                intent.putExtra("VIDEO_ID", searchResults.get(position).getId());
-//                startActivity(intent);
-//            }
-//        });
-//    }
 
     @Override
     public void youtubeData(List<VideoItem> searchResults) {

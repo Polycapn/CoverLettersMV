@@ -24,6 +24,7 @@
         <activity
             android:name=".View.PlayerActivity"
             android:label="@string/title_activity_cover_letters_activities"
+            android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
