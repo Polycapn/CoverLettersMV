@@ -10,6 +10,9 @@
 
     <color name="shadow">#555555</color>
     <color name="title">#777777</color>
+
+
     <color name="transparent_black">#E6000000</color>
+
 
 </resources>
