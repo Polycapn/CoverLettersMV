@@ -39,8 +39,8 @@ public class YoutubeConnector {
             query = youtube.search().list("id,snippet");
             query.setKey(KEY);
             query.setType("video");
-            query.setMaxResults(25L);
-            query.setFields("items(id/videoId,snippet/title,snippet/description,snippet/thumbnails/default/url)");
+            query.setMaxResults(20L);
+            query.setFields("items(id/videoId,snippet/title,snippet/description,snippet/thumbnails/high/url)");
 
             Log.d(TAG, "YoutubeConnector:"+query.toString());
         } catch (IOException e) {
@@ -61,7 +61,7 @@ public class YoutubeConnector {
                 VideoItem item = new VideoItem();
                 item.setTitle(result.getSnippet().getTitle());
                 item.setDescription(result.getSnippet().getDescription());
-                item.setThumbnailURL(result.getSnippet().getThumbnails().getDefault().getUrl());
+                item.setThumbnailURL(result.getSnippet().getThumbnails().getHigh().getUrl());
                 item.setId(result.getId().getVideoId());
                 items.add(item);
             }
