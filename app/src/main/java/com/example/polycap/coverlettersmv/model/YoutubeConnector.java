@@ -20,10 +20,13 @@ import java.util.List;
  * Created by Polycap on 12/3/2015.
  */
 public class YoutubeConnector {
+    private static final String TAG = YoutubeConnector.class.getSimpleName();
     private YouTube youtube;
     private YouTube.Search.List query;
 
     public static final String KEY = "AIzaSyArQAIkpNoD9Ppo8gui0AbvCMKbe1ZlxsQ";
+    private static final long NUMBER_OF_VIDEOS_RETURNED = 25;
+
 
     public YoutubeConnector(Context context) {
         youtube = new YouTube.Builder(new NetHttpTransport(), new JacksonFactory(), new HttpRequestInitializer() {
@@ -36,18 +39,23 @@ public class YoutubeConnector {
             query = youtube.search().list("id,snippet");
             query.setKey(KEY);
             query.setType("video");
+            query.setMaxResults(25L);
             query.setFields("items(id/videoId,snippet/title,snippet/description,snippet/thumbnails/default/url)");
+
+            Log.d(TAG, "YoutubeConnector:"+query.toString());
         } catch (IOException e) {
             Log.d("YC", "Could not initialize: " + e.getMessage());
         }
     }
 
-    public List<VideoItem> search(String keywords) {
+
+    public List<VideoItem> search(String keywords) throws IOException {
         query.setQ(keywords);
+
         try {
             SearchListResponse response = query.execute();
             List<SearchResult> results = response.getItems();
-            List<VideoItem> items = new ArrayList<VideoItem>();
+            List<VideoItem> items = new ArrayList<>();
 
             for (SearchResult result : results) {
                 VideoItem item = new VideoItem();
