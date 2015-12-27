@@ -25,6 +25,7 @@
     <style name="ActionBar.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
         <item name="android:textColor">@color/colorAccent</item>
     </style>
+
     <style name="AppTheme.Translucent" parent="AppTheme">
         <item name="colorPrimary">@color/colorPrimaryDark</item>
         <item name="colorPrimaryDark">@color/darkness</item>
@@ -34,4 +35,21 @@
         <item name="android:windowIsTranslucent">true</item>
     </style>
 
+    <style name="Material_Card_Title" parent="Material_Headline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">2dp</item>
+
+    </style>
+
+    <style name="Material_Card_View">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">6dp</item>
+    </style>
 </resources>

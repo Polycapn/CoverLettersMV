@@ -1,17 +1,17 @@
 <resources>
-    <string name="app_name">CoverLettersMV</string>
+    <string name="app_name">MindVally_cv</string>
 
-    <string name="title_activity_cover_letter">CoverLetterActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="title_logo">NATIONAL GEOGRAPHIC</string>
-    <string name="btn_skip_intro">Skip Intro</string>
-
+    <string name="title_activity_cover_letter">MindVally_cv</string>
+    <string name="action_settings">Settings</string>
 
     <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
     <string name="title_activity_cover_letters_activities">CoverLettersActivities</string>
     <string name="mindvalleyCL">MindValley Cover Letter</string>
     <string name="DEVELOPER_KEY">AIzaSyBgmVlCIVDx50BX5mnJemxgQZ94DxX3HLU</string>
+    <string name="title_activity_nav">NavActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
 
 </resources>
