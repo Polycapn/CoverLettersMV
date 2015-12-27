@@ -40,7 +40,6 @@
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:paddingTop="4dp"
-            android:layout_marginTop="@dimen/abc_action_bar_default_height_material"
             android:fitsSystemWindows="true"
             app:headerLayout="@layout/nav_header_nav"
             app:menu="@menu/activity_nav_drawer" />
